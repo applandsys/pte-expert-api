@@ -11,11 +11,18 @@ use Karim007\SslcommerzLaravel\Sslcommerz;
 
 class PaymentController extends Controller
 {
+
+    public function test(){
+        return response()->json(['status'=>'success']);
+
+    //    $sslcommerz = new SSLCommerzPayment();
+
+      //  dd( $sslcommerz);
+
+    }
     public function initiate(Request $request)
     {
         $tran_id = uniqid();
-
-        return response()->json(['status'=>'success','tran_id'=>$tran_id,'name'=>$request->name]);
 
         $randomString = Str::random(6);
 
