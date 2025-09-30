@@ -15,7 +15,7 @@ class PaymentController extends Controller
     {
         $tran_id = uniqid();
 
-    //    return response()->json(['status'=>'success','tran_id'=>$tran_id,'name'=>$request->name]);
+        return response()->json(['status'=>'success','tran_id'=>$tran_id,'name'=>$request->name]);
 
         $randomString = Str::random(6);
 
